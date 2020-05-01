@@ -1,0 +1,18 @@
+<?php
+class Config {
+	public static $db_host = "@db_host";
+	public static $db_port = @db_port;
+	public static $db_user = "@db_user";
+	public static $db_password = "@db_password";
+	public static $db_name = "@db_name";
+	public static $db_prefix = "@db_prefix";
+	
+	public static $module_api_white = @api_white;
+	public static $module_api_black = @api_black;
+	public static $module_api_short = @api_short;
+	public static $module_mysql_shortlinks = @mysql_shortlinks;
+	
+	public static $module_api_short_link = '@module_api_short_link';
+	
+	public static $api_key = "@api_key";
+}
