@@ -94,7 +94,7 @@ if ($mysqli->connect_error) {
 					") ENGINE=MyISAM DEFAULT CHARSET=utf8;");
 		
 	}
-	if(Config::$module_api_short && Config::$module_mysql_shortlinks) {
+	if(Config::$module_api_short || Config::$module_mysql_shortlinks) {
 	    $mysqli->query("CREATE TABLE IF NOT EXISTS `{$prefix}shortlink` (" .
 	    "  `id` int(11) NOT NULL AUTO_INCREMENT," .
 	    "  `url` text NOT NULL," .
